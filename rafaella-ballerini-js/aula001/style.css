@@ -1,0 +1,35 @@
+body {
+    background-color: #2C1D17;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #A79986;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    color: #2C1D17;
+}
+
+.container h1, .container p {
+    margin-bottom: 20px;
+}
+
+.container button {
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: rgb(29, 0, 0);
+    color: rgb(186, 178, 178);
+}
