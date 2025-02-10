@@ -20,7 +20,7 @@ function adicionarTarefa(){
     // adiciona o li à lista de tarefas
     listaTarefas.appendChild(novaTarefa)
 
-    // 
+    // mostra a tarefa na li da lista de tarefas
     novaTarefa.textContent = tarefa
 
     // deixa o input vazio
