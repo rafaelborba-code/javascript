@@ -1,0 +1,46 @@
+body {
+    background-color: #2C1D17;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #A79986;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+    border-radius: 10px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 10px;
+}
+
+button {
+    width: 50px; /* Aumenta o tamanho */
+    height: 40px;
+    font-size: 1.2em; /* Texto maior */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    background-color: #5C4033; /* Cor do botão */
+    color: white; /* Texto branco */
+    transition: 0.3s; /* Animação ao passar o mouse */
+}
+
+button:hover {
+    background-color: #3E2C24; /* Cor mais escura ao passar o mouse */
+}
+
+
+p {
+    font-size: 3em;
+}

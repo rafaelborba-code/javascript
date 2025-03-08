@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="showhide">Mostrar / Esconder</button>
+    <p id="texto">Texto apareceu.</p>
+
+    <script>
+        const btn = document.getElementById("showhide")
+        const paragrafo = document.getElementById("texto")
+
+        btn.addEventListener("click", () => {
+            if (paragrafo.style.display === "block"){
+                paragrafo.style.display = "none"
+            }
+            else {
+                paragrafo.style.display = "block"
+            }
+        })
+    </script>
+</body>
+</html>

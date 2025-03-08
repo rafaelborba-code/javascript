@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando a cor do texto</title>
+</head>
+<body>
+    <p id="p">Texto</p>
+    <button id="vermelho">Vermelho</button>
+    <button id="verde">Verde</button>
+    <button id="azul">Azul</button>
+
+    <script>
+        const paragrafo = document.getElementById("p")
+        const vermelho = document.getElementById("vermelho")
+        const verde = document.getElementById("verde")
+        const azul = document.getElementById("azul")
+
+        vermelho.addEventListener("click", () => {
+            paragrafo.style.color = '#FF0000'
+        })
+
+        verde.addEventListener("click", () => {
+            paragrafo.style.color = "#00FF00"
+        })
+
+        azul.addEventListener("click", () => {
+            paragrafo.style.color = "#0000FF"
+        })
+    </script>
+</body>
+</html>

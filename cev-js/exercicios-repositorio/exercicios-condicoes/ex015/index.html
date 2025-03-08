@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Analisando data e hora do sistema</h1>
+    <button onclick="relogio()">Iniciar Análise</button>
+    <div id="texto"><p>Resultado aqui</p></div>
+
+    <script>
+        function relogio(){
+            let agora = new Date()
+            let dia = agora.getDate()
+            let pDia = document.createElement("p")
+            pDia.innerHTML = `Dia: ${dia}`
+            let mes = agora.getMonth()
+            let pMes = document.createElement("p")
+            let ano = agora.getFullYear()
+            let pAno = document.createElement("p")
+            pAno.innerHTML = `Ano: ${ano}`
+            let nDiaDaSemana = agora.getDay()
+            let pDiaDaSemana = document.createElement("p")
+            let horas = agora.getHours()
+            let pHoras = document.createElement("p")
+            pHoras.innerHTML = `Horas: ${horas}`
+            let minutos = agora.getMinutes()
+            let pMinutos = document.createElement("p")
+            pMinutos.innerHTML = `Minutos: ${minutos}`
+            let segundos = agora.getSeconds()
+            let pSegundos = document.createElement("p")
+            pSegundos.innerHTML = `Segundos: ${segundos}`
+            let diadasemana = null
+
+            let texto = document.getElementById("texto")
+            texto.innerHTML = ""
+
+            switch (nDiaDaSemana){
+                case 0:
+                    diadasemana = "Dom"
+                    break
+                case 1:
+                    diadasemana = "Seg"
+                    break
+                case 2:
+                    diadasemana = "Ter"
+                    break
+                case 3:
+                    diadasemana = "Qua"
+                    break
+                case 4:
+                    diadasemana = "Qui"
+                    break
+                case 5:
+                    diadasemana = "Sex"
+                    break
+                case 6:
+                    diadasemana = "Sáb"
+                    break
+            }
+
+            switch (mes){
+                case 0:
+                    mes = "Jan"
+                    break
+                case 1:
+                    mes = "Fev"
+                    break
+                case 2:
+                    mes = "Mar"
+                    break
+                case 3:
+                    mes = "Abr"
+                    break
+                case 4:
+                    mes = "Mai"
+                    break
+                case 5:
+                    mes = "Jun"
+                    break
+                case 6:
+                    mes = "Jul"
+                    break
+                case 7:
+                    mes = "Ago"
+                    break
+                case 8:
+                    mes = "Set"
+                    break
+                case 9:
+                    mes = "Out"
+                    break
+                case 10:
+                    mes = "Nov"
+                    break
+                case 11:
+                    mes = "Dez"
+                    break
+            }
+
+
+
+            pDiaDaSemana.innerHTML = `Dia da semana: ${diadasemana}`
+            pMes.innerHTML = `Mês: ${mes}`
+            texto.appendChild(pDia)
+            texto.appendChild(pMes)
+            texto.appendChild(pAno)
+            texto.appendChild(pDiaDaSemana)
+            texto.appendChild(pHoras)
+            texto.appendChild(pMinutos)
+            texto.appendChild(pSegundos)
+        }
+    </script>
+</body>
+</html>

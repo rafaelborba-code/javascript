@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Interagindo com o sistema</h1>
+    <button onclick="sistema()">Clique em mim</button>
+    <p id="texto">Aqui vai aparecer algo...</p>
+
+    <script>
+        function sistema(){
+            let paragrafo = document.getElementById("texto")
+            let agora = new Date()
+            paragrafo.innerHTML = `O que eu recebi do sistema foi <mark>${agora}</mark>`
+        }
+    </script>
+</body>
+</html>

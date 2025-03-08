@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O número é par ou ímpar</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>É par ou ímpar?</h1>
+    <button onclick="parOuImpar()">Clique para iniciar</button>
+    <p id="texto">O resultado aparecerá aqui</p>
+
+    <script>
+        function parOuImpar() {
+            let paragrafo = document.getElementById("texto")
+            let n = prompt("Digite um número: ")
+            let numero = Number(n)
+
+            if (numero % 2 == 0){
+                paragrafo.innerHTML = `O número ${numero} é <strong>PAR!</strong>` 
+            } else {
+                paragrafo.innerHTML = `O número ${numero} é <strong>ÍMPAR!</strong>` 
+            }
+        }
+    </script>
+</body>
+</html>

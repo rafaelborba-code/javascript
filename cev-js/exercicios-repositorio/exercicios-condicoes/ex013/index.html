@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior valor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Maior valor</h1>
+    <button onclick="maior()">Clique para começar</button>
+    <p id="texto"></p>
+
+    <script>
+        function maior(){
+            let input1 = prompt("Primeiro número: ")
+            let input2 = prompt("Segundo número: ")
+            let n1 = Number(input1)
+            let n2 = Number(input2)
+            let paragrafo = document.getElementById("texto")
+            let maior = 0
+
+            if (n1 != n2) {
+                if (n1 > n2){
+                    maior = n1
+                } else {
+                    maior = n2
+                }
+                paragrafo.innerHTML = `Entre ${n1} e ${n2}, o maior é <strong>${maior}</strong>` 
+            } else {
+                paragrafo.innerHTML = `Os dois números são <strong>iguais</strong>.` 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button id="btn">Clique para calcular</button>
+    <div id="texto"></div>
+
+    <script>
+        let btn = document.getElementById("btn")
+        let texto = document.getElementById("texto")
+
+        btn.addEventListener("click", () => {
+            let n = prompt("Insira um número: ")
+            let dobro = Number(n)*2
+            let metade = Number(n)/2
+
+            texto.innerHTML = `O dobro de ${n} é ${dobro} e a metade é ${metade}`
+        })
+    </script>
+</body>
+</html>

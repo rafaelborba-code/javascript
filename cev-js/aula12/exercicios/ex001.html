@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <div class="container">
+        <p id="texto"></p>
+        <img src="" alt="" id="imagem">
+    </div>
+    <footer>&copy;Rafael Borba</footer>
+
+    <script>
+        let texto = document.getElementById("texto")
+        let imagem = document.getElementById("imagem")
+        let body = document.body
+        let agora = new Date()
+        let hora = agora.getHours()
+
+        texto.textContent = `Agora são ${hora} horas.`
+        if (hora <= 12){
+            body.style.backgroundColor = "#CCBB8D"
+            imagem.src = "imagens-ex001/manha.jpg"
+            imagem.alt = "manha"
+        } else if (hora > 12 && hora <= 18){
+            body.style.backgroundColor = "#A67860"
+            imagem.src = "imagens-ex001/tarde.jpg"
+            imagem.alt = "tarde"
+        } else {
+            body.style.backgroundColor = "#484A49"
+            imagem.src = "imagens-ex001/noite.jpg"
+            imagem.alt = "noite"
+        }
+    </script>
+</body>
+</html>

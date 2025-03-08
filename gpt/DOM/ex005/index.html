@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar elementos</title>
+</head>
+<body>
+    <button id="add">Adicionar Item</button>
+    <ul></ul>
+
+    <script>
+        const btn = document.getElementById("add")
+        const lista = document.getElementsByTagName("ul")[0]
+
+        btn.addEventListener("click", () => {
+            const listItem = document.createElement("li")
+            listItem.textContent = "Item da lista"
+
+            lista.appendChild(listItem)
+        })
+    </script>
+
+</body>
+</html>

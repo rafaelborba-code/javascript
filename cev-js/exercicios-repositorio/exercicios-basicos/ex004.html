@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+</head>
+<body>
+    <h1>Trabalhando com dados v2.0</h1>
+    <button onclick="clique()">Clique para começar</button>
+    <div id="texto"></div>
+
+    <script>
+        function clique() {
+            let nome = prompt("Seu nome: ")
+            let texto = document.getElementById('texto')
+
+            texto.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer!</p>`
+        }
+
+    </script>
+</body>
+</html>

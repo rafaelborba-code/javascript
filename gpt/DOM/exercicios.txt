@@ -1,0 +1,31 @@
+1. Modificando o Texto de um Elemento
+Crie um HTML com um <p> e um botão.
+Quando o botão for clicado, o texto do <p> deve mudar para "Texto alterado!".
+
+2. Alterando a Cor do Texto
+Crie um <p> e três botões: "Vermelho", "Verde", "Azul".
+Ao clicar em cada botão, o texto do <p> deve mudar para a cor correspondente.
+
+3. Contador Simples
+Crie um número exibido na tela e dois botões: "Aumentar" e "Diminuir".
+Cada clique deve aumentar ou diminuir o número.
+
+4. Exibir Texto Digitado
+Crie um campo de input e um <p>.
+Conforme o usuário digita, o texto do <p> deve ser atualizado automaticamente.
+
+5. Criar Elementos Dinamicamente
+Crie um botão "Adicionar Item".
+Ao clicar, um novo <li> deve ser adicionado a uma <ul>.
+
+6. Mudar Imagem ao Passar o Mouse
+Coloque uma imagem no HTML.
+Quando o usuário passar o mouse sobre ela, troque para outra imagem.
+
+7. Esconder e Mostrar Elementos
+Crie um botão "Mostrar/Esconder".
+Ao clicar, um parágrafo deve aparecer e desaparecer alternadamente.
+
+8. Validação de Formulário
+Crie um campo de input para e-mail e um botão "Enviar".
+Quando o botão for clicado, exiba uma mensagem dizendo se o e-mail digitado é válido.

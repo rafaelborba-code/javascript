@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button id="btn" onclick="soma()">Iniciar a soma</button>
+    <div id="texto"></div>
+
+    <script>
+        function soma(){
+            let texto = document.getElementById("texto")
+            let n1 = prompt("Primeiro número: ")
+            let n2 = prompt("Segundo número: ")
+            let soma = Number(n1) + Number(n2)
+
+            texto.innerHTML = `<p>A soma entre ${n1} e ${n2} é <strong>${soma}</strong></p>`
+        }
+    </script>
+</body>
+</html>

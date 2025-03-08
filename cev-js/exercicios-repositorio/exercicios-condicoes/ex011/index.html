@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Média do aluno v2.0</h1>
+    <button onclick="media()">Calcular média</button>
+    <div id="texto"></div>
+
+    <script>
+        function media(){
+            let nome = prompt("Seu nome: ")
+            let n1 = prompt("Primeira nota: ")
+            let n2 = prompt("Segunda nota: ")
+            let media = (Number(n1)+Number(n2)) / 2
+            let texto = document.getElementById("texto")
+            let mensagem = "Estude um pouco mais!"
+
+            if (media > 7){
+                mensagem = "Meus parabéns!"
+            }
+
+            let pNome = document.createElement("p")
+            pNome.innerHTML = `Calculando a média final de <mark>${nome}</mark>.`
+            let pNotas = document.createElement("p")
+            pNotas.innerHTML = `As notas obtidas foram <mark>${n1} e ${n2}</mark>.`
+            let pMedia = document.createElement("p")
+            pMedia.innerHTML = `A média final é <mark>${media}</mark>`
+            let pMensagem = document.createElement("p")
+            pMensagem.innerHTML = `A mensagem que temos é: <strong style="color: red">${mensagem}</span>`
+
+            texto.appendChild(pNome)
+            texto.appendChild(pNotas)
+            texto.appendChild(pMedia)
+            texto.appendChild(pMensagem)
+        }
+    </script>
+</body>
+</html>

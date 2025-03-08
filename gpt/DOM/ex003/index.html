@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Simples</title>
+</head>
+<body>
+    <p id="numero">0</p>
+    <button id="menosum">-1</button><button id="maisum">+1</button>
+
+    <script>
+        const numero = document.getElementById("numero")
+        const btn_mais = document.getElementById("maisum")
+        const btn_menos = document.getElementById("menosum")
+
+        btn_mais.addEventListener("click", () => {
+            numero.textContent = Number(numero.textContent) + 1
+        })
+
+        btn_menos.addEventListener("click", () => {
+            numero.textContent = Number(numero.textContent) - 1
+        })
+    </script>
+</body>
+</html>
